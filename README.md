@@ -48,3 +48,9 @@
 ### D - Dependency Inversion Principle
 
 - Inverter a ordem de como a dependência chega no caso de uso, recebo as dependências como parâmetro
+
+## Controller -> agrupa endpoints relacionados a uma determinada funcionalidade
+
+## Use cases -> são cenários que descrevem como um sistema será utilizado por seus usuários, mostrando as interações entre o usuário e o sistema em diferentes situações
+
+## Repository -> é um padrão de design que serve para abstrair a comunicação com o banco de dados em um arquivo separado, facilitando a manutenção e organização do código
