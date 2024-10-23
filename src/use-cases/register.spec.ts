@@ -11,13 +11,12 @@ let usersRepository: InMemoryUsersRepository
 let sut: RegisterUseCase
 
 describe('Register Use Case', () => {
-  // vai executar antes de cada teste
   beforeEach(() => {
     usersRepository = new InMemoryUsersRepository()
     sut = new RegisterUseCase(usersRepository)
   })
 
-  it('should hash user password upon registration', async () => {
+  it('should be able to register', async () => {
     const { user } = await sut.execute({
       name: 'John Doe',
       email: 'johndoe@example.com',
