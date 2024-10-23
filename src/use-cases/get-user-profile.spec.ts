@@ -11,7 +11,6 @@ let usersRepository: InMemoryUsersRepository
 let sut: GetUserProfileUseCase
 
 describe('Get User Profile Use Case', () => {
-  // vai executar antes de cada teste
   beforeEach(() => {
     usersRepository = new InMemoryUsersRepository()
     sut = new GetUserProfileUseCase(usersRepository)
@@ -33,7 +32,7 @@ describe('Get User Profile Use Case', () => {
   })
 
   it('should not be able to get user profile with wrong id', async () => {
-    expect(() =>
+    await expect(() =>
       sut.execute({
         userId: 'non-existing-user-id',
       }),
