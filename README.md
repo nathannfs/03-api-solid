@@ -49,12 +49,36 @@
 
 - Inverter a ordem de como a dependência chega no caso de uso, recebo as dependências como parâmetro
 
-## Controller -> agrupa endpoints relacionados a uma determinada funcionalidade
+## Controller - Use Cases - Repository
 
-## Use cases -> são cenários que descrevem como um sistema será utilizado por seus usuários, mostrando as interações entre o usuário e o sistema em diferentes situações
+### Controller
 
-## Repository -> é um padrão de design que serve para abstrair a comunicação com o banco de dados em um arquivo separado, facilitando a manutenção e organização do código
+- agrupa endpoints relacionados a uma determinada funcionalidade
 
-## TDD -> Test-driven development
+### Use Cases
+
+- são cenários que descrevem como um sistema será utilizado por seus usuários, mostrando as interações entre o usuário e o sistema em diferentes situações
+
+### Repository
+
+- é um padrão de design que serve para abstrair a comunicação com o banco de dados em um arquivo separado, facilitando a manutenção e organização do código
+
+## TDD - Test-driven development
 
 - Diz que se desenvolve o teste de alguma regra de negócio antes da implementação, o teste ajuda a validar se a implementação está certa
+
+## JWT - Json Web Token
+
+- Usuário faz login, envia e-mail/senha, o back-end cria um token ÚNICO, não-modificável e STATELESS
+
+STATELESS: não é armazenado em nenhuma estrutura de persistência de dados (banco de dados)
+
+Back-end: quando vai criar o token ele usa uma PALAVRA-CHAVE (string)
+
+Palavra-chave: sad5asda5sdas5dsa1d56asd5sadasd2sad1sa3sada
+
+E-mail/senha - header.payload.sign
+
+Login - JWT
+JWT - todas requisições dali rpa frente
+Header (cabeçalho): Authorization Bearer JWT
