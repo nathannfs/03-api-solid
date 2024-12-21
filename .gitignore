@@ -2,3 +2,5 @@ node_modules
 build
 .env
 coverage
+package-lock.json
+pnpm-lock.yaml
